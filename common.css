@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body *{
+    box-sizing: border-box;
+}
+.hide{
+    display: none;
+}
+
+/* S: 미리보기 팝업 */
+.preview_pop_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    z-index: 999;
+}
+.preview_pop_wrap .preview_header{
+    position: fixed;
+    width: 100%;
+    background: #fff ;
+    padding: 20px 70px 20px 20px;
+    height: 60px;
+}
+.preview_pop_wrap .preview_header h3{
+    width: 100%;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.preview_pop_wrap .preview_header button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    background: none;
+    border: none;
+}
+.preview_pop_wrap .preview_header button img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.preview_pop_wrap .preview_contents{
+    padding: 80px 20px 100px 20px;
+    overflow-y: scroll;
+    height: 100%;
+}
+.preview_pop_wrap .preview_footer{
+    padding: 16px 30px 31px 30px;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    /* (기본필수) flex container 생성 */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* [정렬] space-between */
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /* [정렬] 교차축 - 가운데 기준 */
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.preview_pop_wrap .preview_footer .btn{
+    width: 30px;
+    height: 30px;
+}
+.preview_pop_wrap .preview_footer .btn:first-child{
+    margin-left: 0;
+}
+.preview_pop_wrap .preview_footer .btn.share_btn{
+    width: 20px;
+    height: 20px;
+}
+.preview_pop_wrap .preview_footer .btn.url_btn{
+    width: 22px;
+    height: 22px;
+}
+.preview_pop_wrap .preview_footer .btn.google_btn{
+    width: 26px;
+    height: 26px;
+}
+.preview_pop_wrap .preview_footer .btn.star_btn{
+    width: 24px;
+    height: 24px;
+}
+.preview_pop_wrap .preview_footer .btn.more_btn{
+    width: 20px;
+    height: 20px;
+}
+.preview_pop_wrap .preview_footer .btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.preview_pop_wrap .preview_footer .btn.share_btn a{
+    background-image: url('./img/ico_preview_share_btn.png');
+}
+.preview_pop_wrap .preview_footer .btn.url_btn a{
+    background-image: url('./img/ico_preview_url_btn.png');
+}
+.preview_pop_wrap .preview_footer .btn.google_btn a{
+    background-image: url('./img/ico_preview_google_btn.png');
+}
+.preview_pop_wrap .preview_footer .btn.kakao_btn a{
+    background-image: url('./img/ico_preview_kakao_btn.png');
+}
+.preview_pop_wrap .preview_footer .btn.star_btn a{
+    background-image: url('./img/ico_star_off.png');
+}
+.preview_pop_wrap .preview_footer .btn.star_btn.on a{
+    background-image: url('./img/ico_star_on.png');
+}
+.preview_pop_wrap .preview_footer .btn.more_btn a{
+    background-image: url('./img/ico_more_btn.png');
+}
+/* E: 미리보기 팝업 */
