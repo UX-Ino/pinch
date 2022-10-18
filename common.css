@@ -47,7 +47,12 @@ body *{
 .hide{
     display: none;
 }
+html {
 
+    -ms-content-zooming: none;
+    -ms-touch-action: pan-x pan-y;
+    
+    }
 /* S: 미리보기 팝업 */
 .preview_pop_wrap{
     position: fixed;
