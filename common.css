@@ -63,6 +63,12 @@ html {
     background-color: #F5F5F5;
     z-index: 999;
 }
+.preview_pop_wrap.active .preview_header{
+    display: none;
+}
+.preview_pop_wrap.active .preview_footer{
+    display: none;
+}
 .preview_pop_wrap .preview_header{
     position: fixed;
     width: 100%;

@@ -8,7 +8,7 @@
 
     <title>pinchtest</title>
     <link rel="stylesheet" href="common.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     
 
 </head>
@@ -48,6 +48,12 @@
     <!-- E: 미리보기 팝업 -->
     <script>
 
+                // 타겟영역을 제외하고 클릭했을 시 팝업 숨김처리.
+                $('.preview_contents').on('click', function(){
+                    
+                $('.preview_pop_wrap').toggleClass('active');
+  
+            });
     </script>
 </body>
 </html>
